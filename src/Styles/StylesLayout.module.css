@@ -1,0 +1,87 @@
+.header {
+    background-color: #0D0908;
+    height: 70px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .linklogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 18px;
+}
+
+.navbar a .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.navbarmenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 18px;
+}
+
+.navbarmenu .itemGrid {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.navbarmenu .itemGrid a {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.navbarmenu .itemGrid a svg {
+    margin-left: 5px;
+}
+
+.navbarmenu .clickitem {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    position: absolute;
+    background-color: #0D0908;
+    top: 70px;
+    right: 26%;
+    width: 194px;
+    height: 119px;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s linear;
+}
+.navbarmenu .itemGrid:nth-child(4) .clickitem{
+    right: 18%;
+}
+.navbarmenu .itemGrid:nth-child(5) .clickitem{
+    right: 13%;
+    width: 146px;
+    height: 304px;
+}
+.navbarmenu .itemGrid:hover .clickitem{
+    opacity: 1;
+    visibility: visible;
+}
+
+.navbarmenu .clickitem li{
+margin-top: -10px;
+}
