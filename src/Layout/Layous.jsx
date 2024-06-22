@@ -1,14 +1,22 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styles from "../Styles/StylesLayout.module.css"
 import {Link} from "react-router-dom";
-import {Container, Grid} from "@mui/material";
+import {Container} from "@mui/material";
 import svg from "../assets/Group 45.svg"
-import {FaAngleDown} from "react-icons/fa";
+import svg2 from "../assets/chevron-down.svg"
+import svg3 from "../assets/bars.svg"
 
 
 const Layous = () => {
-
-
+    const [active, setActive] = useState(false)
+    const [show, setShow] = useState(true)
+    const [click, setClick] = useState(false)
+    const startShow = () => {
+        setShow((prev) => !prev)
+    }
+    const startclick = () => {
+        setClick((prev) => !prev)
+    }
     return (
         <>
             <header className={styles.header}>
@@ -18,57 +26,52 @@ const Layous = () => {
                             <img src={svg} alt="icons" className={styles.logo}/>
                         </Link>
                         <div className={styles.navbarmenu}>
-                            <Grid container display="flex" alignItems="center" justifyContent="space-between"
-                                  width="650px">
-                                <Grid item xl={2} lg={2} className={styles.itemGrid}><Link to="/">HOME</Link></Grid>
-                                <Grid item xl={2} lg={2} className={styles.itemGrid}><Link to="/">ABOUT US</Link></Grid>
-                                <Grid item xl={2} lg={2} className={styles.itemGrid}>
-                                    <Link to="/">PORTFOLIO <FaAngleDown/></Link>
-                                    <div className={styles.clickitem}>
-                                        <li><Link to="">
-                                            PORTFOLIO LIST
-                                        </Link></li>
-                                        <li><Link to="">
-                                            PORTFOLIO DETAIL
-                                        </Link></li>
+                            {show ? <ul className={styles.Ulliste}>
+                                <li onClick={() => setActive((prev) => !prev)} className={active ? active : ""}><Link
+                                    to="/">HOME</Link></li>
+                                <li onClick={() => setActive((prev) => !prev)} className={active ? active : ""}><Link
+                                    to="/">ABOUT US</Link></li>
+                                <li><Link to="/">
+                                    <div onClick={startclick} className={styles.itemMenu}>
+                                        PORTFOLIO
+                                        <img src={svg2} alt="icons"/>
                                     </div>
-                                </Grid>
-                                <Grid item xl={2} lg={2} className={styles.itemGrid}><Link to="/">ARTICLE <FaAngleDown/></Link>
-                                    <div className={styles.clickitem}>
-                                        <li><Link to="">
-                                            ARTICLE LIST
-                                        </Link></li>
-                                        <li><Link to="">
-                                            ARTICLE DETAIL
-                                        </Link></li>
+                                    {click ?  <div className={styles.itemNavbar}>
+                                        <li><Link to="">PORTFOLIO LIST</Link></li>
+                                        <li><Link to="">PORTFOLIO DETAIL</Link></li>
+                                    </div> :null }
+                                </Link></li>
+                                <li><Link to="/">
+                                    <div onClick={startclick} className={styles.itemMenu}>
+                                        ARTICLE
+                                        <img src={svg2} alt="icons"/>
                                     </div>
-                                </Grid>
-                                <Grid item xl={2} lg={2} className={styles.itemGrid}><Link
-                                    to="/">PAGES <FaAngleDown/></Link>
-                                    <div className={styles.clickitem}>
-                                        <li><Link to="">
-                                            LOGIN
-                                        </Link></li>
-                                        <li><Link to="">
-                                            REGISTER
-                                        </Link></li>
-                                        <li><Link to="">
-                                            MY PROFILE
-                                        </Link></li>
-                                        <li><Link to="">
-                                            PRICING
-                                        </Link></li>
-                                        <li><Link to="">
-                                            FAQ
-                                        </Link></li>
-                                        <li><Link to="">
-                                            404 PAGE
-                                        </Link></li>
+                                    {click ?  <div className={styles.itemNavbar}>
+                                        <li><Link to="">ARTICLE LIST</Link></li>
+                                        <li><Link to="">ARTICLE DETAIL</Link></li>
+                                    </div> :null}
+                                </Link></li>
+                                <li><Link to="/">
+                                    <div onClick={startclick} className={styles.itemMenu}>
+                                        PAGES
+                                        <img src={svg2} alt="icons"/>
                                     </div>
-                                </Grid>
-                                <Grid item xl={2} lg={2} className={styles.itemGrid}><Link to="/">CONTACT</Link></Grid>
-
-                            </Grid>
+                                    {click ? <div className={styles.itemNavbar}>
+                                        <li><Link to="">LOGIN</Link></li>
+                                        <li><Link to="">REGISTER</Link></li>
+                                        <li><Link to="">MY PROFILE</Link></li>
+                                        <li><Link to="">PRICING</Link></li>
+                                        <li><Link to="">FAQ</Link></li>
+                                    </div> :null}
+                                </Link></li>
+                                <li onClick={() => setActive((prev) => !prev)} className={active ? active : ""}><Link
+                                    to="/">CONTACT</Link></li>
+                            </ul> : styles.active}
+                        </div>
+                        <div className={styles.mobile}>
+                            <div onClick={startShow} className={styles.itemMenuResponsvie}>
+                                <img src={svg3} alt="icon"/>
+                            </div>
                         </div>
                     </div>
                 </Container>
