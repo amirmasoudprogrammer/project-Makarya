@@ -237,7 +237,7 @@
         transition: all .3s linear;
         position: fixed;
         background-color: #0D0908;
-        width: 370px;
+        width: 100%;
         right: 0;
         height: 550px;
         top: 70px;

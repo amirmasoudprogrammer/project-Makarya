@@ -7,9 +7,12 @@ import 'swiper/css/pagination';
 import {EffectFade, Navigation, Pagination} from 'swiper/modules';
 import styles from "../Styles/StyleSliders.module.css"
 import {Container} from "@mui/material";
+import img1 from "../image/rawpixel-558599-unsplash.png"
+import img2 from "../image/leone-venter-559377-unsplash.png"
 
 
-function Slidsers(props) {
+
+function Slidsers() {
     return (
         <div className={styles.itemslider}>
             <Swiper spaceBetween={30} effect={'fade'} navigation={true} pagination={{
@@ -23,10 +26,10 @@ function Slidsers(props) {
                                 Make it Happen
                             </span>
                             <img
-                                src="/src/assets/Got a lot of idea to be realized Tell it to the right one to make it happen!And fortunately, that right one is just in front of you..png"
+                                src="/src/image/Got a lot of idea to be realized Tell it to the right one to make it happen!And fortunately, that right one is just in front of you..png"
                                 alt=""/>
                         </div>
-                        <img className={styles.img} src="/src/assets/rawpixel-558599-unsplash.png" alt=""/>
+                        <img className={styles.img} src={img1} alt="img"/>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -36,10 +39,10 @@ function Slidsers(props) {
                                 Make it Happen
                             </span>
                             <img
-                                src="/src/assets/Got a lot of idea to be realized Tell it to the right one to make it happen!And fortunately, that right one is just in front of you..png"
+                                src="/src/image/Got a lot of idea to be realized Tell it to the right one to make it happen!And fortunately, that right one is just in front of you..png"
                                 alt=""/>
                         </div>
-                        <img className={styles.img} src="/src/assets/leone-venter-559377-unsplash.png" alt=""/>
+                        <img className={styles.img} src={img2} alt="img"/>
                     </div>
 
                 </SwiperSlide>

@@ -2,15 +2,15 @@ import React, {useState} from 'react';
 import styles from "../Styles/StylesLayout.module.css"
 import {Link, Outlet} from "react-router-dom";
 import {Container} from "@mui/material";
-import svg from "../assets/Group 45.svg"
-import svg2 from "../assets/chevron-down.svg"
-import svg3 from "../assets/bars.svg"
-import svg4 from "../assets/dribbble.svg"
-import svg5 from "../assets/facebook-square.svg"
-import svg6 from "../assets/instagram.svg"
-import svg7 from "../assets/linkedin.svg"
-import svg8 from "../assets/medium.svg"
-import svg9 from "../assets/twitter.svg"
+import svg from "../image/Group 45.svg"
+import svg2 from "../image/chevron-down.svg"
+import svg3 from "../image/bars.svg"
+import svg4 from "../image/dribbble.svg"
+import svg5 from "../image/facebook-square.svg"
+import svg6 from "../image/instagram.svg"
+import svg7 from "../image/linkedin.svg"
+import svg8 from "../image/medium.svg"
+import svg9 from "../image/twitter.svg"
 
 
 const Layous = ({children}) => {
