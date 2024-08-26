@@ -1,13 +1,19 @@
 import React, {useState} from 'react';
 import styles from "../Styles/StylesLayout.module.css"
-import {Link} from "react-router-dom";
+import {Link, Outlet} from "react-router-dom";
 import {Container} from "@mui/material";
 import svg from "../assets/Group 45.svg"
 import svg2 from "../assets/chevron-down.svg"
 import svg3 from "../assets/bars.svg"
+import svg4 from "../assets/dribbble.svg"
+import svg5 from "../assets/facebook-square.svg"
+import svg6 from "../assets/instagram.svg"
+import svg7 from "../assets/linkedin.svg"
+import svg8 from "../assets/medium.svg"
+import svg9 from "../assets/twitter.svg"
 
 
-const Layous = () => {
+const Layous = ({children}) => {
     const [active, setActive] = useState(false)
     const [show, setShow] = useState(true)
     const [click, setClick] = useState(false)
@@ -36,20 +42,20 @@ const Layous = () => {
                                         PORTFOLIO
                                         <img src={svg2} alt="icons"/>
                                     </div>
-                                    {click ?  <div className={styles.itemNavbar}>
+                                    {click ? <div className={styles.itemNavbar}>
                                         <li><Link to="">PORTFOLIO LIST</Link></li>
                                         <li><Link to="">PORTFOLIO DETAIL</Link></li>
-                                    </div> :null }
+                                    </div> : null}
                                 </Link></li>
                                 <li><Link to="/">
                                     <div onClick={startclick} className={styles.itemMenu}>
                                         ARTICLE
                                         <img src={svg2} alt="icons"/>
                                     </div>
-                                    {click ?  <div className={styles.itemNavbar}>
+                                    {click ? <div className={styles.itemNavbar}>
                                         <li><Link to="">ARTICLE LIST</Link></li>
                                         <li><Link to="">ARTICLE DETAIL</Link></li>
-                                    </div> :null}
+                                    </div> : null}
                                 </Link></li>
                                 <li><Link to="/">
                                     <div onClick={startclick} className={styles.itemMenu}>
@@ -62,7 +68,7 @@ const Layous = () => {
                                         <li><Link to="">MY PROFILE</Link></li>
                                         <li><Link to="">PRICING</Link></li>
                                         <li><Link to="">FAQ</Link></li>
-                                    </div> :null}
+                                    </div> : null}
                                 </Link></li>
                                 <li onClick={() => setActive((prev) => !prev)} className={active ? active : ""}><Link
                                     to="/">CONTACT</Link></li>
@@ -76,7 +82,80 @@ const Layous = () => {
                     </div>
                 </Container>
             </header>
-            <footer></footer>
+            <div className={styles.main}>
+                {children}
+                <Outlet/>
+            </div>
+            <footer className={styles.footer}>
+                <Container>
+                    <div className={styles.itemFooter}>
+                        <div className={styles.titles}>
+                            <Link to="/">
+                                <img src={svg} alt="icon"/>
+                            </Link>
+                            <div className={styles.textfooter}>
+                                <p>With supporting text below as a natural lead-in to additional content. Lorem ipsum
+                                    and
+                                    something else.</p>
+                            </div>
+                            <div className={styles.footertextend}>
+                            <span>
+                                Special Region of Yogyakarta
+                                Indonesia
+                                <br/>
+                                (027) 333333
+
+                            </span>
+                            </div>
+                        </div>
+                        <div className={styles.itemMenufooter}>
+                            <div className={styles.menuFooter}>
+                                <ul className={styles.ulListe}>
+                                    <h3>Home</h3>
+                                    <p className={styles.p}>About Us</p>
+                                    <li className={styles.itemLI}>
+                                        <Link className={styles.titlemenu} to="">Portfolio</Link>
+                                        <div className={styles.Listeitems}>
+                                            <li><Link to="">Portfolio List</Link></li>
+                                            <li><Link to="">Portfolio Detail</Link></li>
+
+                                        </div>
+                                    </li>
+                                    <li className={styles.itemLI}>
+                                        <Link className={styles.titlemenu} to="">Article</Link>
+                                        <div className={styles.Listeitems}>
+                                            <li><Link to="">Article List</Link></li>
+                                            <li><Link to="">Article Detail</Link></li>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul className={styles.ULlisteEnd}>
+                                    <p className={styles.p}>Pages</p>
+                                    <li><Link to="">Login</Link></li>
+                                    <li><Link to="">Register</Link></li>
+                                    <li><Link to="">My Profile</Link></li>
+                                    <li><Link to="">Pricing</Link></li>
+                                    <li><Link to="">FAQ</Link></li>
+                                    <li><Link to="">404 Page</Link></li>
+                                    <h3>Contact</h3>
+
+                                </ul>
+                            </div>
+                            <div className={styles.linkpages}>
+                                <h3>Follow us on :</h3>
+                                <div className={styles.pageitems}>
+                                    <Link to="/"><img src={svg7} alt="icon"/></Link>
+                                    <Link to="/"><img src={svg4} alt="icon"/></Link>
+                                    <Link to="/"><img src={svg8} alt="icon"/></Link>
+                                    <Link to="/"><img src={svg5} alt="icon"/></Link>
+                                    <Link to="/"><img src={svg9} alt="icon"/></Link>
+                                    <Link to="https://instagram.com/mramirmasoud.ir"><img src={svg6} alt="icon"/></Link>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </Container>
+            </footer>
 
         </>
     );

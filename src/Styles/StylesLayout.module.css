@@ -7,7 +7,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .navbar .linklogo {
@@ -40,6 +39,7 @@
     transition: all .3s linear;
     opacity: 1;
     visibility: visible;
+    z-index: 2;
 }
 
 .navbarmenu .active {
@@ -231,7 +231,7 @@
     cursor: pointer;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 490px) {
     .navbarmenu .Ulliste {
         flex-direction: column;
         transition: all .3s linear;
@@ -246,7 +246,12 @@
         padding: 20px;
         opacity: 1;
         visibility: visible;
+        z-index: 2;
 
+    }
+
+    .navbarmenu .Ulliste li a .itemMenu img {
+        display: none;
     }
 
     .navbarmenu .Ulliste li:nth-child(3) a .itemNavbar {
@@ -258,7 +263,7 @@
         top: 8px;
         right: 47px;
         background-color: transparent;
-
+        display: none;
 
     }
 
@@ -274,19 +279,20 @@
         justify-content: space-around;
         flex-direction: column;
         margin-top: 10px;
+        display: none;
 
     }
 
     .navbarmenu .Ulliste li:nth-child(5) a .itemNavbar {
         position: relative;
         background-color: transparent;
-        display: flex;
         align-items: center;
         justify-content: space-evenly;
         left: 0;
         right: 0;
         top: 0;
         margin: 0;
+        display: none;
         height: 190px;
     }
 
@@ -301,6 +307,7 @@
 
     .mobile {
         display: block;
+        z-index: 10000;
     }
 
     .itemMenuResponsvie {
@@ -310,4 +317,265 @@
     .navbarmenu .Ulliste li {
 
     }
+}
+
+.footer {
+    display: flex;
+    background-color: #0D0908;
+    width: 100%;
+    height: 445px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0;
+
+}
+
+.footer .itemFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .itemFooter .titles {
+
+}
+
+.footer .itemFooter .titles a {
+
+}
+
+.footer .itemFooter .titles a img {
+    width: 53px;
+    height: 53px;
+}
+
+.footer .itemFooter .titles .textfooter {
+    width: 300px;
+    height: 85px;
+    margin-top: 15px;
+}
+
+.footer .itemFooter .titles .textfooter p {
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.footer .itemFooter .titles .footertextend {
+    width: 200px;
+    height: 77px;
+    margin-top: 30px;
+}
+
+.footer .itemFooter .titles .footertextend span {
+    font-size: 14px;
+    color: #d5d2d2;
+}
+
+.itemMenufooter {
+    display: flex;
+}
+
+.itemMenufooter .menuFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.itemMenufooter .menuFooter .ulListe {
+    margin-right: 80px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 100px;
+    height: 250px;
+}
+
+.itemMenufooter .menuFooter .ulListe h3 {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.itemMenufooter .menuFooter .ulListe .p {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 25px;
+}
+
+.itemMenufooter .menuFooter .ulListe .itemLI {
+    margin-top: 18px;
+}
+
+.itemMenufooter .menuFooter .ulListe .itemLI .titlemenu {
+    font-weight: bold;
+}
+
+.itemMenufooter .menuFooter .ulListe .itemLI .Listeitems {
+    margin-left: 10px;
+    margin-top: 10px;
+
+}
+
+.itemMenufooter .menuFooter .ulListe .itemLI .Listeitems li {
+    margin-top: 10px;
+}
+
+.itemMenufooter .menuFooter .ulListe .itemLI .Listeitems li a {
+    font-size: 12px;
+    color: #d5d2d2;
+
+}
+
+.itemMenufooter .menuFooter .ulListe li a {
+    color: #FFFFFF;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.itemMenufooter .menuFooter .ULlisteEnd {
+    list-style: none;
+    margin-right: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 100px;
+    height: 260px;
+}
+
+.itemMenufooter .menuFooter .ULlisteEnd .p {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.itemMenufooter .menuFooter .ULlisteEnd h3 {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 20px;
+
+}
+
+.itemMenufooter .menuFooter .ULlisteEnd li {
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.itemMenufooter .menuFooter .ULlisteEnd li a {
+    font-size: 12px;
+    color: #d5d2d2;
+    text-decoration: none;
+}
+
+.linkpages {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.linkpages h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.linkpages .pageitems {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 150px;
+    height: 129px;
+    margin-top: 10px;
+    flex-direction: column;
+}
+
+.linkpages .pageitems a {
+    margin-right: 20px;
+    margin-top: 13px;
+    padding-top: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 46px;
+}
+
+@media (max-width: 490px) {
+    .footer {
+        height: auto;
+    }
+
+    .footer .itemFooter {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer .itemFooter .titles {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 90px;
+    }
+
+    .footer .itemFooter .titles .textfooter {
+        width: 243px;
+        height: 85px;
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer .itemFooter .titles .footertextend {
+        width: 200px;
+        height: 77px;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .itemMenufooter {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .itemMenufooter .menuFooter {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-top: 45px;
+    }
+
+    .itemMenufooter .menuFooter .ulListe {
+        margin-right: 0;
+        text-align: center;
+        display: block;
+    }
+
+    .itemMenufooter .menuFooter .ULlisteEnd {
+        margin-right: 0;
+        text-align: center;
+        display: block;
+        margin-top: 25px;
+    }
+
+    .linkpages {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 60px;
+        justify-content: center;
+
+    }
+
+
 }

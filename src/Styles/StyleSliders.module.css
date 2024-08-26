@@ -1,0 +1,43 @@
+.itemslider {
+    z-index: -1;
+}
+
+.imgItems {
+    position: relative;
+}
+
+.textitems {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    top: 0;
+}
+
+.textitems span {
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: -5px;
+}
+
+
+.img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 490px) {
+    .textitems span {
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: -5px;
+    }
+    .textitems img {
+        display: none;
+    }
+}
