@@ -1,0 +1,48 @@
+.ItemCards {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    width: 350px;
+    padding: 0;
+    margin-top: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.ItemCards img {
+    width: 350px;
+    border-radius: 0;
+}
+.ItemCards .CARDbottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    width: 350px;
+    border: 1px solid #e8d9ba;
+    height: 113px;
+}
+.ItemCards .CARDbottom .ItemText{
+
+}
+.ItemCards .CARDbottom .ItemText span{
+    font-size: 28px;
+}
+.ItemCards .CARDbottom .ItemText p{
+    font-size: 14px;
+    color: #818A91;
+    margin-top: 8px;
+}
+.ItemCards .CARDbottom .Buttons button{
+    background-color: #FFB51F;
+    border: none;
+    outline: none;
+    width: 72px;
+    height: 45px;
+}
+.ItemCards .CARDbottom .Buttons button a{
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+
+}

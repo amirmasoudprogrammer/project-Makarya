@@ -1,0 +1,40 @@
+.Categories .itemText{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.Categories .itemText span {
+    margin-top: 70px;
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+.Categories .itemText p {
+    width: 35px;
+    height: 5px;
+    margin-top: 10px;
+    background-color: #FFB51F;
+}
+.CategoriesItems{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.CategoriesItems .buttonAll{
+    width: 161px;
+    height: 53px;
+    background-color: #FFB51F;
+    border: 1px solid #FFB51F;
+    color: white;
+    font-size: 20px;
+    margin-top: 80px;
+}
+.CategoriesItems .buttonAll a{
+    text-decoration: none;
+    color: white;
+}
+

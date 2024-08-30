@@ -1,0 +1,43 @@
+.items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.items .itemTEXT {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.items .itemTEXT span {
+    margin-top: 70px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.items .itemTEXT p {
+    width: 35px;
+    height: 5px;
+    margin-top: 10px;
+    background-color: #FFB51F;
+}
+
+.items .itemTEXT .itemstext {
+    font-size: 16px;
+    line-height: 2;
+    color: #707070;
+    width: 92%;
+}
+
+.items .imgback {
+background-image: url("../image/a-r-c-h-i-g-e-r-o-s-a-659132-unsplash.png");
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+
+}

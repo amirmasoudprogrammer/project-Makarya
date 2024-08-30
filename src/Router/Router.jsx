@@ -1,7 +1,7 @@
 import React from 'react';
 import {Route , Routes} from "react-router-dom";
-import {Abouts} from "../Components/Abouts";
 import Homepage from "../Pages/Homepage.jsx";
+import CategoriesAll from "../Components/template/CategoriesAll.jsx";
 
 
 
@@ -12,7 +12,8 @@ function Routers(props) {
             <Routes>
 
                     <Route path="/" element={<Homepage/>}/>
-                    <Route path="/Abouts" element={<Abouts/>}/>
+                    <Route path="/CategoriesAll" element={<CategoriesAll/>}/>
+
 
             </Routes>
 

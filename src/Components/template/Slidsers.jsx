@@ -5,10 +5,10 @@ import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import {EffectFade, Navigation, Pagination} from 'swiper/modules';
-import styles from "../Styles/StyleSliders.module.css"
+import styles from "../../Styles/StyleSliders.module.css"
 import {Container} from "@mui/material";
-import img1 from "../image/rawpixel-558599-unsplash.png"
-import img2 from "../image/leone-venter-559377-unsplash.png"
+import img1 from "../../image/rawpixel-558599-unsplash.png"
+import img2 from "../../image/leone-venter-559377-unsplash.png"
 
 
 
