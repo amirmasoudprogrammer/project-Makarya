@@ -25,9 +25,10 @@ function Slidsers() {
                             <span>
                                 Make it Happen
                             </span>
-                            <img
-                                src="/src/image/Got a lot of idea to be realized Tell it to the right one to make it happen!And fortunately, that right one is just in front of you..png"
-                                alt=""/>
+                            <p>
+                                Got a lot of idea to be realized? Tell it to the right one to make it happen!
+                                And fortunately, that right one is just in front of you.
+                            </p>
                         </div>
                         <img className={styles.img} src={img1} alt="img"/>
                     </div>
@@ -38,9 +39,10 @@ function Slidsers() {
                             <span>
                                 Make it Happen
                             </span>
-                            <img
-                                src="/src/image/Got a lot of idea to be realized Tell it to the right one to make it happen!And fortunately, that right one is just in front of you..png"
-                                alt=""/>
+                            <p>
+                                Got a lot of idea to be realized? Tell it to the right one to make it happen!
+                                And fortunately, that right one is just in front of you.
+                            </p>
                         </div>
                         <img className={styles.img} src={img2} alt="img"/>
                     </div>

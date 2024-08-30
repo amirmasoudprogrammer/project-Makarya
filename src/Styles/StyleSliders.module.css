@@ -24,7 +24,9 @@
     font-weight: bold;
     margin-top: -5px;
 }
-
+.textitems p{
+    font-size: 16px;
+}
 
 .img {
     width: 100%;
