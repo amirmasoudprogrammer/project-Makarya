@@ -26,6 +26,9 @@
 }
 .textitems p{
     font-size: 16px;
+    width: 49%;
+    line-height: 2;
+    margin-top: 10px;
 }
 
 .img {
@@ -39,7 +42,7 @@
         font-weight: bold;
         margin-top: -5px;
     }
-    .textitems img {
+    .textitems p {
         display: none;
     }
 }
