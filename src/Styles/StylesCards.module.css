@@ -7,11 +7,16 @@
     margin-top: 30px;
     text-decoration: none;
     color: black;
+    overflow: hidden;
 }
 
 .ItemCards img {
     width: 350px;
+    transition: all .3s linear;
     border-radius: 0;
+}
+.ItemCards img:hover{
+    transform: scale(1.1) ;
 }
 .ItemCards .CARDbottom{
     display: flex;
