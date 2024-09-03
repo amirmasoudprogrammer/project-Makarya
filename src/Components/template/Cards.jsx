@@ -6,14 +6,14 @@ import text from "../../Helper.js";
 
 
 function Cards({data}) {
-    const {id, images, category , title} =data
+    const {id, image, brand , title} = data
     return (
         <Container maxWidth="lg">
             <Link to={`/Categories/${id}`} className={styles.ItemCards}>
-                <img src={images} alt="img"/>
+                <img src={image} alt="img"/>
              <div className={styles.CARDbottom}>
                  <div className={styles.ItemText}>
-                     <span>{category.name}</span>
+                     <span>{brand}</span>
                      <p>{text(title)}</p>
                  </div>
                  <div className={styles.Buttons}>

@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const Api = axios.create({  baseURL: "https://api.escuelajs.co/api/v1/"}  );
+const Api = axios.create({  baseURL: "https://fakestoreapi.in/api"}  );
 Api.interceptors.response.use(
     (response) => response.data,
     (error) => Promise.reject(error)

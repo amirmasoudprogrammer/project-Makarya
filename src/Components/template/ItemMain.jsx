@@ -1,16 +1,25 @@
-import React from 'react';
+import React ,{useEffect} from 'react';
 import styles from "../../Styles/StylesItemMain.module.css"
-import {Container, Grid} from "@mui/material";
+import {Container, Grid} from "@mui/material"
+import Aos from "aos";
+import "aos/dist/aos.css"
+
 
 
 function ItemMain(props) {
+
+    useEffect(() => {
+        Aos.init()
+    },[])
+
     return (
 
         <div className={styles.items}>
             <Container maxWidth="lg">
                 <Grid container rowSpacing={1} columnSpacing={{xs: 1, sm: 2, md: 3}}>
                     <Grid item xl={12} lg={12} sm={12} md={12} xs={12}>
-                        <div className={styles.itemTEXT}>
+                        <div className={styles.itemTEXT} data-aos="fade-up"  data-aos-easing="linear"
+                             data-aos-duration="1500">
                             <span>Who Are We</span>
                             <p></p>
                             <span className={styles.itemstext}>

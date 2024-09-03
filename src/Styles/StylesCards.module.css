@@ -11,9 +11,10 @@
 }
 
 .ItemCards img {
-    width: 350px;
+    width: 300px;
     transition: all .3s linear;
-    border-radius: 0;
+   margin: 0 auto;
+
 }
 .ItemCards img:hover{
     transform: scale(1.1) ;
@@ -26,6 +27,7 @@
     width: 350px;
     border: 1px solid #e8d9ba;
     height: 113px;
+    margin-top: 20px;
 }
 .ItemCards .CARDbottom .ItemText{
 

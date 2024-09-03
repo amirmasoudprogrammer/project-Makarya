@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
@@ -9,10 +9,16 @@ import styles from "../../Styles/StyleSliders.module.css"
 import {Container} from "@mui/material";
 import img1 from "../../image/rawpixel-558599-unsplash.png"
 import img2 from "../../image/leone-venter-559377-unsplash.png"
+import Aos from "aos"
+import "aos/dist/aos.css"
 
 
 
 function Slidsers() {
+
+    useEffect(() => {
+        Aos.init()
+    },[])
     return (
         <div className={styles.itemslider}>
             <Swiper spaceBetween={30} effect={'fade'} navigation={true} pagination={{
@@ -21,7 +27,8 @@ function Slidsers() {
                 <Container maxWidth="lg">
                 <SwiperSlide>
                     <div className={styles.imgItems}>
-                        <div className={styles.textitems}>
+                        <div className={styles.textitems} data-aos="fade-up"  data-aos-easing="linear"
+                             data-aos-duration="1500">
                             <span>
                                 Make it Happen
                             </span>
@@ -35,7 +42,8 @@ function Slidsers() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className={styles.imgItems}>
-                        <div className={styles.textitems}>
+                        <div className={styles.textitems} data-aos="fade-up"  data-aos-easing="linear"
+                             data-aos-duration="1500">
                             <span>
                                 Make it Happen
                             </span>

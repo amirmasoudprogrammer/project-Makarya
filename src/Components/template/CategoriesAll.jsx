@@ -19,7 +19,7 @@ function CategoriesAll(props) {
         <Container maxWidth="lg">
             <Grid container mt={5}>
                 {
-                    data.map((Data) => (
+                    data.products?.map((Data) => (
                         <>
 
                             <Grid item xl={4} lg={4} md={6} sm={12} xs={12}><Cards data={Data} key={Data.id}/></Grid>
