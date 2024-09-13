@@ -1,0 +1,39 @@
+.itemTEXT{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.itemTEXT span{
+    margin-top: 10px;
+    font-size: 40px;
+    font-weight: bold;
+}
+.itemTEXT p{
+    width: 35px;
+    height: 5px;
+    margin-top: 10px;
+    background-color: #FFB51F;
+}
+.sliderscards{
+    margin-top: 50px;
+}
+.cards{
+    overflow: hidden;
+}
+
+@media (max-width: 490px) {
+    .swiper-wrapper{
+        background-color: red;
+    }
+    .sliderscards{
+        margin-top: 50px;
+        width: 291px;
+    }
+    .SwiperSlide{
+        margin-left: 5px;
+    }
+
+
+}

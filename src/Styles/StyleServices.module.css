@@ -1,0 +1,99 @@
+.ItemServices {
+
+}
+
+.ItemServices .itemTEXT {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.ItemServices .itemTEXT span {
+    margin-top: 10px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.ItemServices .itemTEXT p {
+    width: 35px;
+    height: 5px;
+    margin-top: 10px;
+    background-color: #FFB51F;
+}
+
+.Services {
+
+}
+
+.CardServices {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.CardServices .imgCarda {
+    background-color: #0D0908;
+    padding: 10px;
+    width: 96px;
+    height: 96px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.CardServices span {
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.CardServices p {
+    width: 350px;
+    height: 346px;
+    font-size: 20px;
+    margin-top: 20px;
+    color: #373A3C;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.buttons button {
+    width: 212px;
+    height: 53px;
+    background-color: #FFB51F;
+    border: none;
+}
+
+.buttons button a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+@media (max-width: 490px) {
+    .CardServices span {
+        margin-top: 20px;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .CardServices p {
+        width: 290px;
+        height: 414px;
+        font-size: 20px;
+        margin-top: 20px;
+        color: #373A3C;
+    }
+
+}

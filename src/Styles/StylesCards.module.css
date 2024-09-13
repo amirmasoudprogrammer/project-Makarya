@@ -13,13 +13,15 @@
 .ItemCards img {
     width: 300px;
     transition: all .3s linear;
-   margin: 0 auto;
+    margin: 0 auto;
 
 }
-.ItemCards img:hover{
-    transform: scale(1.1) ;
+
+.ItemCards img:hover {
+    transform: scale(1.1);
 }
-.ItemCards .CARDbottom{
+
+.ItemCards .CARDbottom {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -29,25 +31,30 @@
     height: 113px;
     margin-top: 20px;
 }
-.ItemCards .CARDbottom .ItemText{
+
+.ItemCards .CARDbottom .ItemText {
 
 }
-.ItemCards .CARDbottom .ItemText span{
+
+.ItemCards .CARDbottom .ItemText span {
     font-size: 28px;
 }
-.ItemCards .CARDbottom .ItemText p{
+
+.ItemCards .CARDbottom .ItemText p {
     font-size: 14px;
     color: #818A91;
     margin-top: 8px;
 }
-.ItemCards .CARDbottom .Buttons button{
+
+.ItemCards .CARDbottom .Buttons button {
     background-color: #FFB51F;
     border: none;
     outline: none;
     width: 72px;
     height: 45px;
 }
-.ItemCards .CARDbottom .Buttons button a{
+
+.ItemCards .CARDbottom .Buttons button a {
     font-size: 16px;
     color: white;
     text-decoration: none;

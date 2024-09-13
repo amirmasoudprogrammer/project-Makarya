@@ -1,0 +1,14 @@
+.border{
+    width: 730px;
+    height: 1px;
+    background-color: #FFB51F;
+    margin: 70px auto;
+}
+@media (max-width: 490px) {
+    .border{
+        width: 290px;
+        height: 1px;
+        background-color: #FFB51F;
+        margin: 20px auto;
+    }
+}

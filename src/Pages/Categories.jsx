@@ -8,6 +8,7 @@ import Aos from "aos"
 import "aos/dist/aos.css"
 
 
+
 function Categories(props) {
 
     const [data, setData] = useState([])
@@ -40,14 +41,13 @@ function Categories(props) {
                 </Grid>
             </Grid>
             <div className={styles.CategoriesItems}>
-                <Grid container mt={5} data-aos="fade-up"  data-aos-easing="linear"
+                <Grid container mt={5} data-aos="fade-up" data-aos-easing="linear"
                       data-aos-duration="1500">
                     {
                         data.products?.slice(1, 7).map((Data) => (
                             <>
 
-                                <Grid item xl={4} lg={4} md={6} sm={12} xs={12} data-aos="fade-up"><Cards  data={Data}
-                                                                                       key={Data.id}/></Grid>
+                                <Grid item xl={4} lg={4} md={6} sm={12} xs={12} data-aos="fade-up"  key={Data.id}><Cards data={Data}/></Grid>
 
 
                             </>
@@ -56,6 +56,7 @@ function Categories(props) {
                 </Grid>
                 <button className={styles.buttonAll}><Link to="/CategoriesAll">VIEW ALL </Link></button>
             </div>
+
         </Container>
     )
         ;
